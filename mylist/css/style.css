@@ -51,3 +51,6 @@ li:hover {
 
 dl {
   font-size: 14px; }
+
+.content {
+  float: left; }
