@@ -1,0 +1,53 @@
+$primary-color: #FF4D45;
+$secondary-color: whitesmoke;
+body {
+  background-color: $secondary-color !important; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important; 
+  font-weight: 300;
+}
+
+/*.form-group {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  left: 100px;
+  z-index: 50; }*/
+
+.form-horizontal {
+  position: relative;
+  top: 200px;
+  height: 100%;
+  background-color: lightgray;
+  z-index: 100; }
+.test{
+  background: url("../img/tulips.jpg");
+}
+nav{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+ul{
+  background-color: $primary-color;
+}
+li{
+  list-style: none;
+  
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+li:hover{
+  background-color: #EE2C45;
+  transition: background-color 0.3s;
+}
+.hidden{
+  display: none;
+}
+.websites-table{
+    width: 60vw;
+    margin: auto;
+}
+dl{
+    font-size: 14px;
+}

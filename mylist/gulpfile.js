@@ -1,7 +1,5 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
-var minify = require('gulp-minify');
 
 gulp.task('styles', function() {
     gulp.src('sass/**/*.scss')
