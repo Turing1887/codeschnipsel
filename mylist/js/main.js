@@ -1,8 +1,10 @@
 $(document).ready(function(){
     $("#gsetup-btn").click(function(){
-        $(".websites-table").addClass("hidden");
+        $(".content").addClass("hidden");
         $(".setup").removeClass("hidden");
     });
-
-
+    $("#websites-btn").click(function(){
+        $(".content").addClass("hidden");
+        $(".websites-table").removeClass("hidden");
+    });
 });
