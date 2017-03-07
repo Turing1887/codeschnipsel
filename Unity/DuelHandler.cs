@@ -11,14 +11,16 @@ public class DuelHandler : MonoBehaviour{
     public EnemyHandler enemyHandler;
 
     void Start(){
-       countdown = 3000.0f;
+       countdown = 3.0f;
     } 
 
     void FixedUpdate(){
         if(gunHandler.GunIsInPlace){
             countdown -= Time.deltaTime;
             if(countdown == 0){
-              Invoke("WinningCondition",100.0f);
+              gameStart = true;
+              Invoke("WinningCondition",10.0f);
+              countdown = -5.0f;
             }
         }
     } 
