@@ -18,7 +18,8 @@ public class EnemyHandler : MonoBehaviour{
     }
 
     void TakeAim(){
-        
+        //Change the direction with a random Number that varies depending on the difficulty
+        playerDir = (player.transform.position - transform.position).normalized;
 
     }
 
