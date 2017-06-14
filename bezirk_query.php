@@ -16,19 +16,16 @@ if ($conn->connect_error) {
 // Change character set to utf8
 mysqli_set_charset($conn,"utf8");
 
-$sql = "SELECT id, Stadtteilname, Bevölkerung FROM $tableName WHERE id BETWEEN 100 AND 106";
+$sql = "SELECT id,Stadtteilname,Bevölkerung FROM Hamburg WHERE id BETWEEN 100 AND 106";
 $result = $conn->query($sql);
 $data = array();
 
 while ( $row = $result->fetch_assoc())
 {
-  $data[] = array(
-    'id' => $row['id'];
-    'name' => $row['Stadtteilname'];
-  );
+  $data[] = $row;
 }
 
-echo json_encode($data);
+echo json_encode( $data );
 
 
 
