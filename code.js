@@ -10,22 +10,22 @@ $(document).ready(function(){
       data: "",
       dataType: 'json',
       success: function(rows){
-        alert("der fuhngzion is gude fuhngzion vong 1 ervolk her");
         for (var i in rows)
         {
           var row = rows[i];
 
 
-          if(row[1] == $(this).attr('name')){
+          if(row[0] == $(this).attr('name')){
             var id = row[0];
             var districtname = row[1];
             var population = row[2];
-            $('#stadtteilname').text(id + " " + districtname + " " + population);
+            alert(id);
+            // $('#stadtteilname').text(row + " " + districtname + " " + population);
           }
 
         }
       }
-});
+    });
 	});
 	$(".areas").on("mouseleave",function(){
 		$("#stadtteilname").text("\xA0");
