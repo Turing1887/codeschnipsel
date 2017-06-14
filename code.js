@@ -15,12 +15,12 @@ $(document).ready(function(){
           var row = rows[i];
 
 
-          if(row[0] == $(this).attr('name')){
-            var id = row[0];
-            var districtname = row[1];
-            var population = row[2];
+          if(rows[i].title == $(this).attr('name')){
+            var id = rows[i].id;
+            var districtname = rows[i].title;
+            // var population = row[2];
             alert(id);
-            // $('#stadtteilname').text(row + " " + districtname + " " + population);
+            $('#stadtteilname').text(id + " " + districtname);
           }
 
         }

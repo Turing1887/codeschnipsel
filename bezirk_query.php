@@ -22,10 +22,13 @@ $data = array();
 
 while ( $row = $result->fetch_assoc())
 {
-  $data[] = $row;
+  $data[] = array(
+    'id' => $row['id'];
+    'name' => $row['Stadtteilname'];
+  );
 }
 
-echo json_encode( $data );
+echo json_encode($data);
 
 
 
