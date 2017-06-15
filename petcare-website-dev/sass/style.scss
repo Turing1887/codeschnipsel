@@ -1,0 +1,93 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.maintable{
+  background-color: black;
+  height: 100vh;
+  .order-container{
+    // margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20%;
+
+  }
+
+}
+.order-button{
+  padding: 10px 20px;
+  background-color: rgba(255,255,255,0);
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  a{
+    color: white;
+  }
+}
+.menu{
+  margin-top: 20px;
+  ul{
+    li{
+      float: right;
+      list-style: none;
+      font-size: 20px;
+      padding: 20px;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+}
+.customer-review{
+  background-color: #FF4545;
+}
+.customer{
+  margin: 20px 0px;
+  display: inline-flex;
+  // -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+  // -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+  // box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
+  p{
+    margin: 20px 0;
+    color: white;
+    font-size: 16px;
+    i{
+      font-style: normal;
+    }
+  }
+  .customer-img{
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 75px;
+    height: 13vh;
+    margin: 15px;
+    background-position: center top;
+  }
+  .img-1{
+    background-image: url(../img/lazy-guy.jpg);
+  }
+  .img-2{
+    background-image: url(../img/dog.jpg);
+  }
+  .img-3{
+    background-image: url(../img/snoop-dogg.jpg);
+  }
+}
+.newsletter-container{
+  background-color: black;
+  form{
+    p{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 16px;
+      color: white;
+    }
+    .newsletter-email{
+      margin: 20px auto;
+      padding: 10px;
+      float: none;
+    }
+    button{
+      margin: 20px auto;
+    }
+  }
+}

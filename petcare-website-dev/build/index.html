@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Petcare</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="favicon.ico?" type="image/x-icon"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link media="all" type="text/css" rel="stylesheet" href="css/application.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!--<script src="js/behavior.js"></script>-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="maintable">
+        <nav class="container-fluid">
+            <div class="row menu">
+                <ul class="col-lg-12">
+                    <li class="col-lg-3 col-xs-12 text-center" id="gsetup-btn">About us</li>
+                    <li class="col-lg-3 col-xs-12 text-center" id="websites-btn">Shop</li>
+                    <li class="col-lg-3 col-xs-12 text-center" id="app-btn">Products</li>
+                    <!-- <li class="col-lg-3 text-center" id="misc-btn">Misc</li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="content container">
+
+            <div class="order-container">
+              <button class="order-button" id="order-btn"><a href="shop/shop.html">Order now</a></button>
+            </div>
+        </div>
+      </div>
+
+      <section class="customer-review row">
+        <div class="col-xs-12 col-lg-10 customer customer-1">
+          <div class="customer-img img-1 col-xs-3 col-lg-2"></div>
+<p class="col-xs-8 col-lg-8">
+  <i>
+    "Wow. What a great product. I never have to get up to feed my dog ever again!"
+  </i>
+  </br>
+  - Doug, unemployed, 25
+</p>
+
+        </div>
+        <div class="col-xs-12 col-lg-10 customer customer-1">
+          <div class="customer-img img-2 col-xs-3 col-lg-2"></div>
+<p class="col-xs-8 col-lg-8">
+  <i>
+    "Bark!"
+  </i>
+  </br>
+  - Dog, unemployed, 10
+</p>
+
+        </div>
+        <div class="col-xs-12 col-lg-10 customer customer-1">
+          <div class="customer-img img-3 col-xs-3 col-lg-2"></div>
+<p class="col-xs-8 col-lg-8">
+  <i>
+    "You do know that I'm not an actual dog, right?"
+  </i>
+  </br>
+  - Snoop Dogg, not an actual Dog, 40-50
+</p>
+
+        </div>
+      </section>  
+
+      <section class="newsletter-container row">
+        <form action="" id="newsletter-form" class="col-xs-12" onsubmit="sendNewsletter();" novalidate>
+          <p class="col-xs-12">Sign up for our company newsletter and we'll keep you updated on our sweet products!</p>
+          <input type="email" name="newsletter-email" id="newsletter-email" class="newsletter-email col-xs-9 center-block" placeholder="johndoe@example.com"/>
+          <button type="submit" name="newsletter-btn" class="order-button center-block">Sign up</button>
+        </form>
+      </section>
+
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>

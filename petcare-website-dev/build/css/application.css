@@ -1,0 +1,70 @@
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.maintable {
+  background-color: black;
+  height: 100vh; }
+  .maintable .order-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20%; }
+
+.order-button {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: 1px solid white;
+  border-radius: 3px; }
+  .order-button a {
+    color: white; }
+
+.menu {
+  margin-top: 20px; }
+  .menu ul li {
+    float: right;
+    list-style: none;
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif; }
+
+.customer-review {
+  background-color: #FF4545; }
+
+.customer {
+  margin: 20px 0px;
+  display: inline-flex; }
+  .customer p {
+    margin: 20px 0;
+    color: white;
+    font-size: 16px; }
+    .customer p i {
+      font-style: normal; }
+  .customer .customer-img {
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 75px;
+    height: 13vh;
+    margin: 15px;
+    background-position: center top; }
+  .customer .img-1 {
+    background-image: url(../img/lazy-guy.jpg); }
+  .customer .img-2 {
+    background-image: url(../img/dog.jpg); }
+  .customer .img-3 {
+    background-image: url(../img/snoop-dogg.jpg); }
+
+.newsletter-container {
+  background-color: black; }
+  .newsletter-container form p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white; }
+  .newsletter-container form .newsletter-email {
+    margin: 20px auto;
+    padding: 10px;
+    float: none; }
+  .newsletter-container form button {
+    margin: 20px auto; }
