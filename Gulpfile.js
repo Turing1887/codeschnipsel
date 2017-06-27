@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var fileinclude = require('gulp-file-include');
 var compress = require('gulp-compress');
 var minify = require('gulp-minify');
+var browserify = require('gulp-browserify');
 
 gulp.task('styles', function() {
     gulp.src('sass/application.scss')
@@ -17,15 +18,14 @@ gulp.task('fileinclude', function() {
     }))
     .pipe(gulp.dest('./build'));
 });
-
 gulp.task('default',function(){
   gulp.watch('sass/**/*.scss',['styles']);
   gulp.watch('*.html',['fileinclude']);
+  gulp.watch('js/*.js',['scripts']);
   gulp.watch('js/*.js',['compress']);
 });
-
 gulp.task('compress', function () {
-  gulp.src('js/*.js')
+  gulp.src('./build/js/*.js')
   .pipe(minify({
       ext:{
           src:'-debug.js',
@@ -35,4 +35,12 @@ gulp.task('compress', function () {
       ignoreFiles: ['.combo.js', '-min.js']
   }))
   .pipe(gulp.dest('./build/js/'))
+});
+gulp.task('scripts', function() { 
+    gulp.src('js/nodemailer.js')
+      .pipe(browserify({
+        insertGlobals : true,
+        debug : !gulp.env.production
+      }))
+  .pipe(gulp.dest('./build/js'))
 });
