@@ -1,9 +1,10 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var fileinclude = require('gulp-file-include');
-var compress = require('gulp-compress');
-var minify = require('gulp-minify');
-var browserify = require('gulp-browserify');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const fileinclude = require('gulp-file-include');
+const compress = require('gulp-compress');
+const minify = require('gulp-minify');
+const browserify = require('gulp-browserify');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('styles', function() {
     gulp.src('sass/application.scss')
@@ -23,6 +24,7 @@ gulp.task('default',function(){
   gulp.watch('*.html',['fileinclude']);
   gulp.watch('js/*.js',['scripts']);
   gulp.watch('js/*.js',['compress']);
+  gulp.watch('img/*',['imgmin']);
 });
 gulp.task('compress', function () {
   gulp.src('./build/js/*.js')
@@ -43,4 +45,9 @@ gulp.task('scripts', function() {
         debug : !gulp.env.production
       }))
   .pipe(gulp.dest('./build/js'))
+});
+gulp.task('imgmin', function() {
+    gulp.src('img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
 });
